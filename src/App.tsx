@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,26 +12,31 @@ import Resources from "./pages/Resources";
 
 const queryClient = new QueryClient();
 
-// Get the base URL from the environment or use default for GitHub Pages
-const baseUrl = import.meta.env.MODE === 'production' ? '/medlink/' : '/';
+// ← define the base URL for router
+const baseUrl = import.meta.env.BASE_URL || "/";
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter basename={baseUrl}>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services/mentors" element={<ServicesMentors />} />
-          <Route path="/services/mentees" element={<ServicesMentees />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <BrowserRouter basename={baseUrl}>
+          {/* your toasters */}
+          <Toaster />
+          <Sonner />
+          {/* your application routes */}
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services/mentors" element={<ServicesMentors />} />
+            <Route path="/services/mentees" element={<ServicesMentees />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
 
 export default App;
+
