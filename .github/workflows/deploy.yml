@@ -1,5 +1,10 @@
 name: Build & Deploy to GitHub Pages
 
+# Grant write access so the bot can push to gh-pages
+permissions:
+  contents: write
+  pages: write
+
 on:
   push:
     branches:
@@ -31,5 +36,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # (optional) disable jekyll processing:
-          # disable_nojekyll: true
