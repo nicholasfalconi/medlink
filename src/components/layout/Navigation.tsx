@@ -11,7 +11,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,11 +30,11 @@ export const Navigation = () => {
       <Link to="/about" className="text-sm font-medium tracking-wide hover:text-[#007AFF] transition-colors">
         About Us
       </Link>
-      <Collapsible open={isOpen} onOpenChange={setIsOpen} className="relative">
+      <Collapsible open={isServicesOpen} onOpenChange={setIsServicesOpen} className="relative">
         <CollapsibleTrigger className="text-sm font-medium tracking-wide hover:text-[#007AFF] transition-colors flex items-center gap-1">
-          Services <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+          Services <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
         </CollapsibleTrigger>
-        <CollapsibleContent className="absolute top-full left-0 w-48 bg-white rounded-md shadow-lg py-2 mt-2">
+        <CollapsibleContent className="absolute z-50 top-full left-0 w-56 bg-white rounded-md shadow-lg py-2 mt-2">
           <Link 
             to="/services/mentors" 
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#007AFF] transition-colors"
@@ -48,9 +49,25 @@ export const Navigation = () => {
           </Link>
         </CollapsibleContent>
       </Collapsible>
-      <Link to="/resources" className="text-sm font-medium tracking-wide hover:text-[#007AFF] transition-colors">
-        Resources
-      </Link>
+      <Collapsible open={isResourcesOpen} onOpenChange={setIsResourcesOpen} className="relative">
+        <CollapsibleTrigger className="text-sm font-medium tracking-wide hover:text-[#007AFF] transition-colors flex items-center gap-1">
+          Resources <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
+        </CollapsibleTrigger>
+        <CollapsibleContent className="absolute z-50 top-full left-0 w-64 bg-white rounded-md shadow-lg py-2 mt-2">
+          <Link 
+            to="/resources" 
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#007AFF] transition-colors"
+          >
+            All Resources
+          </Link>
+          <Link 
+            to="/resources/life-after-undergrad" 
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#007AFF] transition-colors"
+          >
+            Life After Undergrad
+          </Link>
+        </CollapsibleContent>
+      </Collapsible>
     </>
   );
 

@@ -12,7 +12,7 @@ const menteeExpectations = [
 export const ForMentees = () => {
   return (
     <section className="section-padding bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-16">For Mentees</h2>
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
           <div className="flex flex-col justify-center">

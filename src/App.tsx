@@ -9,11 +9,12 @@ import NotFound from "./pages/NotFound";
 import ServicesMentors from "./pages/services/Mentors";
 import ServicesMentees from "./pages/services/Mentees";
 import Resources from "./pages/Resources";
+import LifeAfterUndergrad from "./pages/resources/LifeAfterUndergrad";
 
 const queryClient = new QueryClient();
 
-// ← define the base URL for router
-const baseUrl = import.meta.env.BASE_URL || "/";
+  // ← define the base URL for router
+  const baseUrl = import.meta.env.BASE_URL || "/";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/services/mentors" element={<ServicesMentors />} />
             <Route path="/services/mentees" element={<ServicesMentees />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/life-after-undergrad" element={<LifeAfterUndergrad />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

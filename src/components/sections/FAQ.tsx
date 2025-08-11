@@ -52,7 +52,7 @@ const faqs = [
 export const FAQ = () => {
   return (
     <section id="faq" className="section-padding bg-gray-50">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
             Frequently Asked Questions

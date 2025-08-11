@@ -23,4 +23,7 @@
   .slide-in {
     @apply animate-fadeIn; /* or whatever animation you prefer */
   }
+  .section-padding {
+    @apply py-24 md:py-28 lg:py-32;
+  }
 }

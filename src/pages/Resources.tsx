@@ -2,7 +2,8 @@
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { Clock, BookOpen, Mail } from "lucide-react";
+import { BookOpen, Mail, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Resources = () => {
   return (
@@ -33,12 +34,11 @@ const Resources = () => {
                 <h3 className="text-lg font-semibold mb-2">Application Tips</h3>
                 <p className="text-gray-600">Personal statement guides, interview preparation, and application timelines</p>
               </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-md">
-                <BookOpen className="h-8 w-8 text-[#007AFF] mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Career Insights</h3>
-                <p className="text-gray-600">Medical specialties overview and career planning resources</p>
-              </div>
+              <Link to="/resources/life-after-undergrad" className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <GraduationCap className="h-8 w-8 text-[#007AFF] mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2 text-gray-900">Life After Undergrad</h3>
+                <p className="text-gray-600">Plan your next steps after graduation: grad school, paid work, or gap year</p>
+              </Link>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-md max-w-md mx-auto">
