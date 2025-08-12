@@ -22,14 +22,22 @@ const Resources = () => {
               Updates, guides, and stories from the MedLink team and community
             </p>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-              <Link to="/blog/life-after-undergrad" className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                <BookOpen className="h-8 w-8 text-[#007AFF] mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-1 text-gray-900">Life After Undergrad</h3>
-                <p className="text-xs text-gray-500 mb-2">By Adam Levitan</p>
-                <p className="text-gray-600">Plan your next steps after graduation: grad school, paid work, or gap year</p>
-              </Link>
-              {/* Future posts can be added here as more content is published */}
+            <div className="max-w-3xl mx-auto mb-12 text-left">
+              <ul className="divide-y rounded-xl border bg-white">
+                <li>
+                  <Link to="/blog/life-after-undergrad" className="block p-5 hover:bg-gray-50">
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900">Life After Undergrad</h3>
+                        <p className="mt-1 text-sm text-gray-600">Plan your next steps after graduation: grad school, paid work, or gap year</p>
+                        <p className="mt-2 text-xs text-gray-500">By Adam Levitan • August 9th, 2025</p>
+                      </div>
+                      <BookOpen className="h-5 w-5 text-[#007AFF] mt-1" />
+                    </div>
+                  </Link>
+                </li>
+                {/* Add more <li> entries here for future posts */}
+              </ul>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-md max-w-md mx-auto">

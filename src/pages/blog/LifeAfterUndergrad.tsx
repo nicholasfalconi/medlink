@@ -66,7 +66,7 @@ const LifeAfterUndergrad = () => {
               </div>
               <header className="mt-4 text-center">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-900">Life After Undergrad</h1>
-                <p className="mt-2 text-sm text-gray-500">Posted on MedLink Blog</p>
+                <p className="mt-2 text-sm text-gray-500">Posted on MedLink Blog • August 9th, 2025</p>
               </header>
 
               <section className="mt-8 mb-10">
