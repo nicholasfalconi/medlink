@@ -60,7 +60,7 @@ const LifeAfterUndergrad = () => {
                   />
                   <div className="text-sm leading-tight">
                     <div className="font-medium text-gray-900">Adam Levitan</div>
-                    <div className="text-gray-600">Inclusion & Access Lead</div>
+                    <div className="text-gray-600">Graduate Studies Advisor</div>
                   </div>
                 </div>
               </div>

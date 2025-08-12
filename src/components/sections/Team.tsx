@@ -64,13 +64,13 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Adam Levitan",
-    role: "Inclusion & Access Lead",
+    role: "Graduate Studies Advisor",
     bio: "Adam is currently pursuing his Master's at the University of Toronto's Institute of Medical Science, with an undergraduate background in biology from Queen's University. Adam enjoys the reciprocal learning that comes with mentor-mentee relationships and is especially passionate about providing mentorship free of cost, the way all mentorship should be.",
     image: "/team/ADAM_LEVITAN.jpeg",
     initials: "AL",
     responsibilities: [
-      "Ensures all content and mentorship are inclusive and accessible",
-      "Helps support students and is responsible for email inquiries",
+      "Advises on graduate program pathways and application strategy",
+      "Supports content accuracy for graduate studies guidance",
     ],
   },
   {
