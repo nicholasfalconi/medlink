@@ -51,17 +51,17 @@ export const Navigation = () => {
       </Collapsible>
       <Collapsible open={isResourcesOpen} onOpenChange={setIsResourcesOpen} className="relative">
         <CollapsibleTrigger className="text-sm font-medium tracking-wide hover:text-[#007AFF] transition-colors flex items-center gap-1">
-          Resources <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
+          Blog <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
         </CollapsibleTrigger>
         <CollapsibleContent className="absolute z-50 top-full left-0 w-64 bg-white rounded-md shadow-lg py-2 mt-2">
           <Link 
-            to="/resources" 
+            to="/blog" 
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#007AFF] transition-colors"
           >
-            All Resources
+            All Posts
           </Link>
           <Link 
-            to="/resources/life-after-undergrad" 
+            to="/blog/life-after-undergrad" 
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#007AFF] transition-colors"
           >
             Life After Undergrad

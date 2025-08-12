@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 import ServicesMentors from "./pages/services/Mentors";
 import ServicesMentees from "./pages/services/Mentees";
 import Resources from "./pages/Resources";
-import LifeAfterUndergrad from "./pages/resources/LifeAfterUndergrad";
+import BlogLifeAfterUndergrad from "./pages/blog/LifeAfterUndergrad";
 
 const queryClient = new QueryClient();
 
@@ -30,8 +30,12 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services/mentors" element={<ServicesMentors />} />
             <Route path="/services/mentees" element={<ServicesMentees />} />
+            {/* Blog routes */}
+            <Route path="/blog" element={<Resources />} />
+            <Route path="/blog/life-after-undergrad" element={<BlogLifeAfterUndergrad />} />
+            {/* Legacy resources URLs (redirect to blog components) */}
             <Route path="/resources" element={<Resources />} />
-            <Route path="/resources/life-after-undergrad" element={<LifeAfterUndergrad />} />
+            <Route path="/resources/life-after-undergrad" element={<BlogLifeAfterUndergrad />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
