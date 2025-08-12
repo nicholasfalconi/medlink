@@ -27,6 +27,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          VITE_GA_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
       - name: Copy CNAME
         run: echo "www.themedlinkproject.com" > dist/CNAME
