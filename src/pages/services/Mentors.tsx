@@ -20,10 +20,20 @@ const ServicesMentors = () => {
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4">
           <iframe
-            src="https://forms.gle/BFEfpC2TbEEUUKuJ7"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdx7BdDIJDE1sXaZNqlkXoCbGm6VzyZmS9DcJkDGmQvWe396Q/viewform?embedded=true"
             className="w-full h-[800px] border-0"
             title="Mentor Application Form"
           />
+          <div className="mt-4 text-center">
+            <a
+              href="https://forms.gle/BFEfpC2TbEEUUKuJ7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#007AFF] underline"
+            >
+              Open the mentor form in a new tab
+            </a>
+          </div>
         </div>
       </section>
       <Roles type="mentor" />
