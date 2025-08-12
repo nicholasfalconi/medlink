@@ -74,9 +74,9 @@ const LifeAfterUndergrad = () => {
                   <p className="text-sm md:text-base leading-7 text-gray-600">
                     Applying to medical school is challenging, and facing rejection can leave you uncertain about next steps, whether that's exploring gap years, graduate programs, or alternative career paths in healthcare and industry.
                   </p>
-                  <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
-                    After graduation, the sudden freedom can feel liberating but often leads to a lack of structure, causing some people to become paralyzed by endless possibilities while others overcommit and spread themselves too thin. We advise students to find the sweet spot by reflecting on their goals - whether improving MCAT scores, pursuing research, or earning income - and scaffold their unstructured time with realistic tasks and timelines to stay accountable.
-                  </p>
+                    <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
+                      After graduation, the sudden freedom can feel liberating but often leads to a lack of structure, causing some people to become paralyzed by endless possibilities while others overcommit and spread themselves too thin. We advise students to find the sweet spot by reflecting on their goals - whether improving MCAT scores, pursuing research, or earning income - and scaffold their unstructured time with realistic tasks and timelines to stay accountable.
+                    </p>
                   <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
                     We've identified three common paths that premeds tend to take after graduation if they don't get into medical school.
                   </p>
@@ -142,7 +142,7 @@ const LifeAfterUndergrad = () => {
                     </div>
                     <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
                       <li>Good for people looking to improvise while finding the right job or graduate program</li>
-                      <li>Can feel unstructured—set goals and routines</li>
+                      <li>Can feel unstructured - set goals and routines</li>
                       <li>Explore your interests however your heart desires</li>
                       <li>Volunteer to learn skills and build connections</li>
                     </ul>

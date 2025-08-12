@@ -27,7 +27,7 @@ export const About = () => {
               From navigating applications to preparing for interviews, the process is not only complex but also costly. Many existing mentorship programs come with steep price tags, putting them out of reach for students who could benefit from them the most.
             </p>
             <p>
-              That's why we created The MedLink Project—to address these gaps and create a supportive community for students. We designed the program with accessibility and inclusivity at its core.
+            That's why we created The MedLink Project - to address these gaps and create a supportive community for students. We designed the program with accessibility and inclusivity at its core.
             </p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8">

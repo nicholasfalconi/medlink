@@ -297,7 +297,7 @@ const LifeAfterUndergrad = () => {
                     </div>
                     <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
                       <li>Good for people looking to improvise while finding the right job or graduate program</li>
-                      <li>Can feel unstructured—set goals and routines</li>
+                      <li>Can feel unstructured - set goals and routines</li>
                       <li>Explore your interests however your heart desires</li>
                       <li>Volunteer to learn skills and build connections</li>
                     </ul>
