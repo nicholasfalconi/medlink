@@ -76,7 +76,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Nicholas Falconi",
     role: "Website & Tech Lead",
-    bio: "Nick holds a degree in Computer Science with a specialization in Biomedical Computing from Queen's University. He built and continues to maintain the MedLink website, ensuring it remains reliable and up to date. He leads all technical efforts for the project - from development to ongoing maintenance - so the platform meets the team's needs.",
+    bio: "Nick holds a bachelor's degree in Computer Science with a specialization in Biomedical Computing from Queen's University. He developed and continues to maintain the MedLink website, ensuring its reliability, performance, and timely updates. As the technical lead for the project, he oversees all aspects of development and ongoing maintenance to align the platform seamlessly with the team's evolving needs.",
     image: "/team/NICK.jpeg",
     initials: "NF",
     responsibilities: [
