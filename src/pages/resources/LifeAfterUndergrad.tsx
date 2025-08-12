@@ -244,67 +244,66 @@ const LifeAfterUndergrad = () => {
         <section className="bg-gray-100">
           <div className="section-padding">
             <div className="max-w-7xl mx-auto px-4">
-              <div className="overflow-x-auto rounded-xl border bg-white">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="border-b bg-gray-50">
-                      <th className="py-3 px-4 text-sm font-semibold text-gray-700">Path</th>
-                      <th className="py-3 px-4 text-sm font-semibold text-gray-700">Summary</th>
-                      <th className="py-3 px-4 text-sm font-semibold text-gray-700">Key Notes</th>
-                    </tr>
-                  </thead>
-                  <tbody className="align-top text-sm text-gray-700">
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="py-3 px-4 flex items-center gap-2">
-                        <GraduationCap className="h-4 w-4 text-[#007AFF]" />
-                        <span className="font-medium text-gray-900">Graduate School</span>
-                      </td>
-                      <td className="py-3 px-4">
-                        Master's: 1–3 years; PhD: 3–7 years. Options include thesis-based or course-based programs.
-                      </td>
-                      <td className="py-3 px-4">
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>Clarify exit opportunities</li>
-                          <li>Supervisor required?</li>
-                          <li>Funding/stipend and cost of living</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr className="border-b hover:bg-gray-50">
-                      <td className="py-3 px-4 flex items-center gap-2">
-                        <Briefcase className="h-4 w-4 text-[#007AFF]" />
-                        <span className="font-medium text-gray-900">Paid Work</span>
-                      </td>
-                      <td className="py-3 px-4">
-                        Ideal for building savings and practical experience; hiring is competitive and requires preparation.
-                      </td>
-                      <td className="py-3 px-4">
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>Resume + cover letter prep; persistence</li>
-                          <li>Align with values: growth, culture, balance</li>
-                          <li>Common fields: advocacy, biotech/pharma, consulting</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="py-3 px-4 flex items-center gap-2">
-                        <Compass className="h-4 w-4 text-[#007AFF]" />
-                        <span className="font-medium text-gray-900">Gap Year</span>
-                      </td>
-                      <td className="py-3 px-4">
-                        Flexible time to explore interests, gain clarity, and prepare for the next step.
-                      </td>
-                      <td className="py-3 px-4">
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>Can feel unstructured—set goals and routines</li>
-                          <li>Volunteer to learn skills and build connections</li>
-                          <li>Iterate toward the right role or program</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <section className="mb-0">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <article className="rounded-xl border border-gray-200 bg-white p-6">
+                    <div className="flex items-center gap-2 mb-2">
+                      <GraduationCap className="h-5 w-5 text-[#007AFF]" />
+                      <h2 className="text-lg font-semibold text-gray-900">Graduate School</h2>
+                    </div>
+                    <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
+                      <li>Master's Programs: 1–3 years</li>
+                      <li>Research/thesis-based (usually 2+ years)</li>
+                      <li>Course based (usually 1–2 years)</li>
+                      <li>PhD: 3–7 years, typically 4 or 5</li>
+                    </ul>
+                    <div className="mt-4">
+                      <p className="text-sm font-medium text-gray-900">Other important considerations</p>
+                      <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
+                        <li>Clarify exit opportunities</li>
+                        <li>Supervisor required?</li>
+                        <li>Funding/stipend and cost of living</li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article className="rounded-xl border border-gray-200 bg-white p-6">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Briefcase className="h-5 w-5 text-[#007AFF]" />
+                      <h2 className="text-lg font-semibold text-gray-900">Paid Work</h2>
+                    </div>
+                    <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
+                      <li>Good for those looking to make money and those who have spent enough time in the classroom</li>
+                      <li>Very competitive - prepare your resume and practice writing cover letters; landing a good position takes patience and persistence</li>
+                    </ul>
+                    <div className="mt-4">
+                      <p className="text-sm font-medium text-gray-900">Important considerations</p>
+                      <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
+                        <li>Align with values: growth, culture, balance</li>
+                      </ul>
+                      <p className="text-sm font-medium text-gray-900 mt-3">Common Employers</p>
+                      <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
+                        <li>Advocacy industry (mental health advocacy organizations, health equity companies)</li>
+                        <li>Biotechnology and pharmaceutical companies (entry-level roles include sales, quality control, and R&amp;D)</li>
+                        <li>Consulting</li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article className="rounded-xl border border-gray-200 bg-white p-6">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Compass className="h-5 w-5 text-[#007AFF]" />
+                      <h2 className="text-lg font-semibold text-gray-900">Gap Year</h2>
+                    </div>
+                    <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
+                      <li>Good for people looking to improvise while finding the right job or graduate program</li>
+                      <li>Can feel unstructured—set goals and routines</li>
+                      <li>Explore your interests however your heart desires</li>
+                      <li>Volunteer to learn skills and build connections</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
             </div>
           </div>
         </section>
