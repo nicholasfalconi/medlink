@@ -20,7 +20,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "12 months",
     structure: "Course-based with paid* internship",
-    link: "https://ihpme.utoronto.ca/academics/graduate-programs/mhsc-medical-physiology/",
+    link: "https://physiology.utoronto.ca/master-health-science-mhsc-medical-physiology",
   },
   {
     program: "Biomedical Discovery and Commercialization",
@@ -28,7 +28,7 @@ const programs: Program[] = [
     school: "McMaster University",
     length: "12 months",
     structure: "Course-based with paid* internship",
-    link: "https://mbdc.mcmaster.ca/",
+    link: "https://bdcprogram.healthsci.mcmaster.ca/",
   },
   {
     program: "Biomedical Informatics",
@@ -36,7 +36,7 @@ const programs: Program[] = [
     school: "Queen's University",
     length: "12 months",
     structure: "Course-based with capstone project",
-    link: "https://healthsci.queensu.ca/education/graduate-programs/biomedical-informatics",
+    link: "https://www.cs.queensu.ca/graduate/bmif/",
   },
   {
     program: "Biomedical Innovation",
@@ -44,7 +44,7 @@ const programs: Program[] = [
     school: "McMaster University",
     length: "12 months",
     structure: "Project-based",
-    link: "https://healthsci.mcmaster.ca/mbi",
+    link: "https://healthinnovation.mcmaster.ca/degree-programs/mbi/program-details/",
   },
   {
     program: "Physiology",
@@ -52,7 +52,7 @@ const programs: Program[] = [
     school: "McGill University",
     length: "12 months",
     structure: "Thesis-based",
-    link: "https://www.mcgill.ca/physiology/graduate-programs",
+    link: "https://www.mcgill.ca/physiology/graduate-studies/prospective-students/msc-program",
   },
   {
     program: "Bioinformatics",
@@ -60,7 +60,7 @@ const programs: Program[] = [
     school: "University of Guelph",
     length: "12-16 months",
     structure: "Course-based with capstone project",
-    link: "https://bioinformatics.uoguelph.ca/",
+    link: "https://www.uoguelph.ca/programs/master-of-bioinformatics/",
   },
   {
     program: "AI in Healthcare",
@@ -68,7 +68,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "16 months",
     structure: "Course-based with paid internship",
-    link: "https://mscac.utoronto.ca/",
+    link: "https://lmp.utoronto.ca/AI-in-healthcare-mscac",
   },
   {
     program: "Health Informatics",
@@ -76,7 +76,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "16 months",
     structure: "Course-based with practicum",
-    link: "https://ihpme.utoronto.ca/academics/graduate-programs/mhi/",
+    link: "https://ihpme.utoronto.ca/programs/health-informatics/mhi-program-details/",
   },
   {
     program: "Health Systems Research",
@@ -84,7 +84,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "12-18 months",
     structure: "Thesis-based OR Course-based (limited enrolment)",
-    link: "https://ihpme.utoronto.ca/academics/graduate-programs/msc-health-systems-research/",
+    link: "https://ihpme.utoronto.ca/programs/health-systems-research/msc-hsr-program-details/",
   },
   {
     program: "Clinical Epidemiology & Health Care Research",
@@ -100,7 +100,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "12 OR 24 months",
     structure: "Course-based with practicum OR Course-based",
-    link: "https://ihpme.utoronto.ca/academics/graduate-programs/msc-applied-clinical-pharmacology/",
+    link: "https://pharmtox.utoronto.ca/acp",
   },
   {
     program: "Pharmacology",
@@ -108,7 +108,7 @@ const programs: Program[] = [
     school: "McGill University",
     length: "18-24 months",
     structure: "Thesis-based",
-    link: "https://www.mcgill.ca/pharma/graduate-programs",
+    link: "https://www.mcgill.ca/pharma/students/graduate/programs-requirements/msc",
   },
   {
     program: "Bioethics",
@@ -116,7 +116,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "20 months",
     structure: "Course-based with practicum and capstone",
-    link: "https://ihpme.utoronto.ca/academics/graduate-programs/mhsc-bioethics/",
+    link: "https://jcb.utoronto.ca/education-training/master-of-health-science-in-bioethics/",
   },
   {
     program: "Health Science",
@@ -124,7 +124,7 @@ const programs: Program[] = [
     school: "University of British Columbia",
     length: "21 months (avg)",
     structure: "Course-based with capstone project",
-    link: "https://spph.ubc.ca/programs/mhsc/",
+    link: "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs/master-of-health-science",
   },
   {
     program: "Medical Science",
@@ -132,7 +132,7 @@ const programs: Program[] = [
     school: "McMaster University",
     length: "22-24 months",
     structure: "Thesis-based",
-    link: "https://healthsci.mcmaster.ca/gradprog/msc",
+    link: "https://medsci.healthsci.mcmaster.ca/",
   },
   {
     program: "Medical Science",
@@ -140,7 +140,7 @@ const programs: Program[] = [
     school: "University of Toronto",
     length: "22-24 months",
     structure: "Thesis-based",
-    link: "https://medsci.utoronto.ca/graduate-programs",
+    link: "https://ims.utoronto.ca/doctoral-stream-programs",
   },
   {
     program: "Epidemiology",
@@ -148,7 +148,7 @@ const programs: Program[] = [
     school: "McGill University",
     length: "24 months",
     structure: "Thesis-based",
-    link: "https://www.mcgill.ca/epi-biostat-occh/graduate-programs",
+    link: "https://www.mcgill.ca/epi-biostat-occh/education/grad/epidemiology/msc-epidemiology-courses-and-learning-objectives",
   },
   {
     program: "Experimental Medicine",
@@ -156,7 +156,7 @@ const programs: Program[] = [
     school: "McGill University",
     length: "24 months",
     structure: "Thesis-based",
-    link: "https://www.mcgill.ca/expmed/graduate",
+    link: "https://www.mcgill.ca/expmed/graduate-studies/programs",
   },
   {
     program: "Neuroscience",
@@ -164,7 +164,7 @@ const programs: Program[] = [
     school: "Queen's University",
     length: "24 months",
     structure: "Thesis-based",
-    link: "https://dbms.queensu.ca/graduate/neuroscience",
+    link: "https://neuroscience.queensu.ca/academic/graduate-program",
   },
   {
     program: "Epidemiology",
@@ -172,7 +172,7 @@ const programs: Program[] = [
     school: "Queen's University",
     length: "24 months",
     structure: "Thesis-based",
-    link: "https://phs.queensu.ca/graduate-programs/msc-epidemiology",
+    link: "https://phs.queensu.ca/programs-courses/degree-programs/msc-epidemiology/program-overview",
   },
   {
     program: "Translational Medicine",
@@ -180,7 +180,7 @@ const programs: Program[] = [
     school: "Queen's University",
     length: "24 months",
     structure: "Thesis-based",
-    link: "https://dbms.queensu.ca/graduate/translational-medicine",
+    link: "https://deptmed.queensu.ca/academics/translational-medicine-graduate-programs/program-overview",
   },
   {
     program: "Experimental Medicine",
@@ -188,13 +188,13 @@ const programs: Program[] = [
     school: "University of British Columbia",
     length: "35 months (avg)",
     structure: "Thesis-based",
-    link: "https://www.expmed.ubc.ca/",
+    link: "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs/master-of-science-experimental-medicine",
   },
 ];
 
 const LifeAfterUndergrad = () => {
   useEffect(() => {
-    document.title = "Life after undergrad | MedLink Resources";
+    document.title = "Life After Undergrad | MedLink Resources";
   }, []);
 
   return (
@@ -205,9 +205,22 @@ const LifeAfterUndergrad = () => {
         <section className="relative bg-white overflow-hidden">
           <div className="section-padding">
             <div className="max-w-7xl mx-auto px-4">
-              <header className="mt-2 text-center">
+              <div className="mt-2 flex justify-center">
+                <div className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm px-3 py-2 shadow-sm">
+                  <img
+                    src="/team/ADAM_LEVITAN.jpeg"
+                    alt="Adam Levitan headshot"
+                    className="h-9 w-9 rounded-full object-cover"
+                  />
+                  <div className="text-sm leading-tight">
+                    <div className="font-medium text-gray-900">Adam Levitan</div>
+                    <div className="text-gray-600">Inclusion & Access Lead</div>
+                  </div>
+                </div>
+              </div>
+              <header className="mt-4 text-center">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
-                  Life after undergrad
+                  Life After Undergrad
                 </h1>
               </header>
 
