@@ -21,8 +21,9 @@ const ServicesMentors = () => {
         <div className="max-w-4xl mx-auto px-4">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdx7BdDIJDE1sXaZNqlkXoCbGm6VzyZmS9DcJkDGmQvWe396Q/viewform?embedded=true"
-            className="w-full h-[800px] border-0"
+            className="w-full min-h-[1200px] h-[1400px] border-0"
             title="Mentor Application Form"
+            loading="lazy"
           />
         </div>
       </section>
