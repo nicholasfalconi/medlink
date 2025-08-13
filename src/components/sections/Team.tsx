@@ -76,7 +76,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Nicholas Falconi",
     role: "Website & Tech Lead",
-    bio: "Nick holds a bachelor's degree in Computer Science with a specialization in Biomedical Computing from Queen's University. He developed and continues to maintain the MedLink website, ensuring its reliability, performance, and timely updates. As the technical lead for the project, he oversees all aspects of development and ongoing maintenance to align the platform seamlessly with the team's evolving needs.",
+    bio: "Nicholas Falconi holds a Bachelor's degree in Computer Science with a specialization in Biomedical Computing from Queen's University. He began his career at Sanofi as a Digital Data Strategy Analyst Intern, later working as a contractor for Falconi Consulting while completing his studies, before returning to Sanofi as a full-time Digital Strategy Analyst. His experience spans building data pipelines, modeling data, and developing front-end solutions in Streamlit and React, with a current focus on multi-agent Generative AI development. Outside of work, Nicholas leads projects including a React-based GenAI platform and a custom boat software and hardware system featuring a waterproof LCD interface, integrated audio and lighting, crash prevention, docking assistance, and speed controls, designed to bring a CarPlay-like experience to the water.",
     image: "/team/NICK.jpeg",
     initials: "NF",
     responsibilities: [
