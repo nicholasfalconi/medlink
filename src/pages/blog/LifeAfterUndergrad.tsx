@@ -72,19 +72,21 @@ const LifeAfterUndergrad = () => {
               <section className="mt-8 mb-10">
                 <div className="max-w-4xl mx-auto">
                   <div className="relative">
-                    <p className="text-sm md:text-base leading-7 text-gray-600">
-                      Applying to medical school is challenging, and facing rejection can leave you uncertain about next steps, whether that's exploring gap years, graduate programs, or alternative career paths in healthcare and industry.
-                    </p>
+                    <div className="space-y-4">
+                      <p className="text-sm md:text-base leading-7 text-gray-600">
+                        Applying to medical school is challenging, and facing rejection can leave you uncertain about next steps, whether that's exploring gap years, graduate programs, or alternative career paths in healthcare and industry.
+                      </p>
+                      <p className="text-sm md:text-base leading-7 text-gray-600">
+                        After graduation, the sudden freedom can feel liberating but often leads to a lack of structure, causing some people to become paralyzed by endless possibilities while others overcommit and spread themselves too thin. We advise students to find the sweet spot by reflecting on their goals - whether improving MCAT scores, pursuing research, or earning income - and scaffold their unstructured time with realistic tasks and timelines to stay accountable.
+                      </p>
+                      <p className="text-sm md:text-base leading-7 text-gray-600">
+                        We've identified three common paths that premeds tend to take after graduation if they don't get into medical school.
+                      </p>
+                    </div>
                     <div className="absolute inset-0 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded">
                       <span className="text-gray-800 font-semibold">Coming Soon</span>
                     </div>
                   </div>
-                    <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
-                      After graduation, the sudden freedom can feel liberating but often leads to a lack of structure, causing some people to become paralyzed by endless possibilities while others overcommit and spread themselves too thin. We advise students to find the sweet spot by reflecting on their goals - whether improving MCAT scores, pursuing research, or earning income - and scaffold their unstructured time with realistic tasks and timelines to stay accountable.
-                    </p>
-                  <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
-                    We've identified three common paths that premeds tend to take after graduation if they don't get into medical school.
-                  </p>
                 </div>
               </section>
             </div>
