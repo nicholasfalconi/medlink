@@ -19,17 +19,19 @@ const ServicesMentors = () => {
       </section>
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-white border rounded-lg shadow-sm p-6 text-center">
-            <p className="text-gray-700 mb-4">
-              This form requires file uploads and can’t be embedded. Please open it in a new tab.
-            </p>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdx7BdDIJDE1sXaZNqlkXoCbGm6VzyZmS9DcJkDGmQvWe396Q/viewform?embedded=true"
+            className="w-full h-[800px] border-0"
+            title="Mentor Application Form"
+          />
+          <div className="mt-4 text-center">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdx7BdDIJDE1sXaZNqlkXoCbGm6VzyZmS9DcJkDGmQvWe396Q/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-md bg-[#007AFF] px-6 py-3 text-white font-medium hover:bg-blue-600 transition"
+              className="text-[#007AFF] underline"
             >
-              Open Mentor Application
+              Open the form in a new tab
             </a>
           </div>
         </div>
