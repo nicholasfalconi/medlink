@@ -220,28 +220,43 @@ const LifeAfterUndergrad = () => {
               </div>
               <header className="mt-4 text-center">
                 <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
-                  Life After Undergrad
+                  Planning for Life after undergrad
                 </h1>
               </header>
 
               <section className="mt-8 mb-10">
                 <div className="max-w-4xl mx-auto">
-                  <div className="relative">
-                    <div className="space-y-4">
-                      <p className="text-sm md:text-base leading-7 text-gray-600">
-                        Applying to medical school is challenging, and facing rejection can leave you uncertain about next steps, whether that's exploring gap years, graduate programs, or alternative career paths in healthcare and industry.
-                      </p>
-                      <p className="text-sm md:text-base leading-7 text-gray-600">
-                        After graduation, the sudden freedom can feel liberating but often leads to a lack of structure, causing some people to become paralyzed by endless possibilities while others overcommit and spread themselves too thin. We advise students to find the sweet spot by reflecting on their goals - whether improving MCAT scores, pursuing research, or earning income - and scaffold their unstructured time with realistic tasks and timelines to stay accountable.
-                      </p>
-                      <p className="text-sm md:text-base leading-7 text-gray-600">
-                        We've identified three common paths that premeds tend to take after graduation if they don't get into medical school.
-                      </p>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded">
-                      <span className="text-gray-800 font-semibold">Coming Soon</span>
-                    </div>
-                  </div>
+                  <p className="text-sm md:text-base leading-7 text-gray-600">
+                    Graduating from undergrad can feel like stepping off a treadmill that’s been running at full speed. For years, your life was probably structured around assignments, exams, and the next milestone. Then suddenly, it’s over. You’ve crossed the stage, shook the Dean’s hand, received your degree, and now you’re left wondering what to do next.
+                  </p>
+                  <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
+                    For students hoping to get into medical school, this phase can be even more complicated. Applications are stressful enough, but rejection, or even uncertainty while waiting, can leave you asking: Now what?
+                  </p>
+                  <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
+                    The truth is, there’s no single “right” path after undergrad. But there are common experiences many premeds share, so this guide reviews some of the most common paths.
+                  </p>
+
+                  <h2 className="mt-8 text-xl font-semibold text-gray-900">The Challenge of Too Much Freedom</h2>
+                  <p className="mt-3 text-sm md:text-base leading-7 text-gray-600">
+                    It may sound odd at first, but it’s normal to feel disoriented after you finish your undergraduate degree. No more assignments, no more waking up for class—it’s up to you to organize your time. Some people feel paralyzed by the endless possibilities; others try to do everything at once (full‑time work, volunteering, shadowing, research, retaking the MCAT).
+                  </p>
+                  <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
+                    Neither extreme is sustainable. The sweet spot lies somewhere in between: reflect on your goals and build a realistic structure around them. Ask yourself:
+                  </p>
+                  <ul className="mt-3 list-disc pl-5 text-sm md:text-base leading-7 text-gray-600 space-y-1">
+                    <li>Do I need to improve my MCAT score?</li>
+                    <li>Do I want to earn an income before medical school?</li>
+                    <li>Do I even want to go to medical school?</li>
+                    <li>Which parts of my application need the most work?</li>
+                  </ul>
+                  <p className="mt-4 text-sm md:text-base leading-7 text-gray-600">
+                    Once you clarify your priorities, you can scaffold your time with achievable goals and timelines—replacing the structure undergrad once provided with one you design for yourself.
+                  </p>
+
+                  <h2 className="mt-8 text-xl font-semibold text-gray-900">Three Common Paths After Graduation</h2>
+                  <p className="mt-3 text-sm md:text-base leading-7 text-gray-600">
+                    Through conversations with students and advisors, we’ve noticed three common paths many premeds take if they don’t go straight into medical school:
+                  </p>
                 </div>
               </section>
             </div>
@@ -256,20 +271,20 @@ const LifeAfterUndergrad = () => {
                   <article className="rounded-xl border border-gray-200 bg-white p-6">
                     <div className="flex items-center gap-2 mb-2">
                       <GraduationCap className="h-5 w-5 text-[#007AFF]" />
-                      <h2 className="text-lg font-semibold text-gray-900">Graduate School</h2>
+                      <h2 className="text-lg font-semibold text-gray-900">Graduate school</h2>
                     </div>
                     <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
-                      <li>Master's Programs: 1–3 years</li>
-                      <li>Research/thesis-based (usually 2+ years)</li>
-                      <li>Course based (usually 1–2 years)</li>
-                      <li>PhD: 3–7 years, typically 4 or 5</li>
+                      <li>Master’s programs typically 1–3 years</li>
+                      <li>Thesis‑based (usually 2+ years)</li>
+                      <li>Course‑based (usually 1–2 years)</li>
+                      <li>PhD: typically 4–7 years</li>
                     </ul>
                     <div className="mt-4">
-                      <p className="text-sm font-medium text-gray-900">Other important considerations</p>
+                      <p className="text-sm font-medium text-gray-900">Key considerations</p>
                       <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
-                        <li>Clarify exit opportunities</li>
-                        <li>Supervisor required?</li>
-                        <li>Funding/stipend and cost of living</li>
+                        <li>Exit opportunities (academia, industry, professional school)</li>
+                        <li>Is a supervisor needed?</li>
+                        <li>Funding and cost of living</li>
                       </ul>
                     </div>
                   </article>
@@ -280,19 +295,14 @@ const LifeAfterUndergrad = () => {
                       <h2 className="text-lg font-semibold text-gray-900">Paid Work</h2>
                     </div>
                     <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
-                      <li>Good for those looking to make money and those who have spent enough time in the classroom</li>
-                      <li>Very competitive - prepare your resume and practice writing cover letters; landing a good position takes patience and persistence</li>
+                      <li>Good fit if you want income or time away from coursework</li>
+                      <li>Competitive—polish your resume/CV and cover letters; persistence matters</li>
                     </ul>
                     <div className="mt-4">
-                      <p className="text-sm font-medium text-gray-900">Important considerations</p>
+                      <p className="text-sm font-medium text-gray-900">Key considerations</p>
                       <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
-                        <li>Align with values: growth, culture, balance</li>
-                      </ul>
-                      <p className="text-sm font-medium text-gray-900 mt-3">Common Employers</p>
-                      <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
-                        <li>Advocacy industry (mental health advocacy organizations, health equity companies)</li>
-                        <li>Biotechnology and pharmaceutical companies (entry-level roles include sales, quality control, and R&amp;D)</li>
-                        <li>Consulting</li>
+                        <li>Clarify your values: growth, culture, work–life balance</li>
+                        <li>Common employers: advocacy organizations, biotech/pharma, consulting</li>
                       </ul>
                     </div>
                   </article>
@@ -303,10 +313,10 @@ const LifeAfterUndergrad = () => {
                       <h2 className="text-lg font-semibold text-gray-900">Gap Year</h2>
                     </div>
                     <ul className="mt-2 list-disc pl-5 text-sm text-gray-600 space-y-1">
-                      <li>Good for people looking to improvise while finding the right job or graduate program</li>
-                      <li>Can feel unstructured - set goals and routines</li>
-                      <li>Explore your interests however your heart desires</li>
-                      <li>Volunteer to learn skills and build connections</li>
+                      <li>Exploration while identifying the right job or graduate program</li>
+                      <li>Can feel unstructured—use goals and routines to stay on track</li>
+                      <li>Explore interests; volunteer to learn skills, build connections, and test paths</li>
+                      <li>Consider structure via courses, research, certificates, or short paid roles</li>
                     </ul>
                   </article>
                 </div>
@@ -320,8 +330,9 @@ const LifeAfterUndergrad = () => {
             <div className="max-w-7xl mx-auto px-4">
               <h2 className="text-2xl font-semibold text-gray-900 text-center">Curated Canadian programs</h2>
               <p className="text-sm text-gray-600 mt-2 text-center">
-                Note: This guide is not comprehensive; always perform your own research. *Most internships are paid.
+                Note: This table is meant as a guide to help navigate interested students and is not comprehensive; it should not replace rigorous individual research into graduate program options.
               </p>
+              <p className="text-xs text-gray-500 mt-1 text-center">* most, but not all, internship positions are paid</p>
 
               <ProgramsTable programs={programs} />
             </div>
