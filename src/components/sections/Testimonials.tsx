@@ -3,11 +3,11 @@ import { useEffect, useRef } from "react";
 const testimonials = [
   "I genuinely didn't know where to start with the whole medical school process. Having someone just a few steps ahead of me made everything feel so much more manageable.",
   "As a first-generation student, I didn't have anyone in my life who understood this path. My mentor helped me feel less intimidated.",
-  "I used to feel like everyone else had some secret roadmap. Ervis taught me most people are figuring it out as they go, and gave me real steps I can take to figuring out my path.",
+  "I used to feel like everyone else had some secret roadmap. [Mentor] taught me most people are figuring it out as they go, and gave me real steps I can take to figuring out my path.",
   "I was overwhelmed trying to balance grades, extracurriculars, and just life in general. Talking to someone who had actually been through it helped me prioritize me.",
   "This experience made medicine feel accessible. Now actually it feels like something I can actually work toward.",
   "My mentor was very nice and honest. This is a great program.",
-  "I was always comparing myself to others and feeling behind. Ervis helped me prioritize things that matter to me!!!!!!",
+  "I was always comparing myself to others and feeling behind. [Mentor] helped me prioritize things that matter to me!!!!!!",
   "Coming from a smaller university who graduated 15 years ago, I feel like I didn't have the same exposure as others. This program helped me understand what the application process looks like from someone who was successful going through it.",
   "I didn't realize how much stress I was carrying. I had such a good experience with my mentor, I recommend them to everybody!",
   "I had so many questions I felt embarrassed to ask at big pre-med events. This gave me a space where I could ask anything.",
@@ -58,7 +58,7 @@ export const Testimonials = () => {
     <section className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto mb-16 px-4">
         <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 text-center mb-4">
-          Customer <span className="text-[#007AFF]">testimonials</span>
+          Student <span className="text-[#007AFF]">Testimonials</span>
         </h2>
         <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto">
           Discover the experiences of those who have trusted us with their path to medicine. Real testimonials from our satisfied mentees.

@@ -73,6 +73,21 @@ const teamSections: TeamSection[] = [
     ],
   },
   {
+    title: "Indigenous Mentorship",
+    description: "Supporting Indigenous students on their path to medicine.",
+    members: [
+      {
+        name: "Alec",
+        role: "Indigenous Mentor Lead",
+        bio: "Alec is a medical student at the University of Ottawa. Outside of school, he enjoys playing soccer and staying active through sports. He values mentorship as a way to give students clarity and confidence when navigating a confusing and competitive path, and he's committed to making that journey feel more approachable for others.",
+        responsibilities: "Leads Indigenous mentorship initiatives, connecting Indigenous students with mentors who understand their unique experiences and supporting them throughout their journey to medicine.",
+        image: "/lovable-uploads/ba8e00af-8c59-45e1-b795-26fe6d2cf17c.png",
+        initials: "A",
+        activeMentor: true,
+      },
+    ],
+  },
+  {
     title: "Operations & Growth",
     description: "Expanding MedLink's reach and building the infrastructure behind the scenes.",
     members: [
@@ -100,7 +115,6 @@ const teamSections: TeamSection[] = [
         bio: "Nicholas Falconi holds a Bachelor's degree in Computer Science with a specialization in Biomedical Computing from Queen's University. He has worked with Sanofi as a Digital Strategy Analyst and has experience in data pipelines, front-end development, and generative AI systems. Outside of work, he leads innovative projects including a React-based GenAI platform and runs Falconi Labs, a full-stack innovation company.",
         responsibilities: "Built and maintains the MedLink platform, overseeing website functionality, forms, and technical infrastructure while supporting the team with digital tools and systems.",
         initials: "NF",
-        activeMentor: true,
       },
     ],
   },
