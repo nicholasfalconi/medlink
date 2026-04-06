@@ -126,119 +126,132 @@ const MeetTheTeam = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50 font-sans">
       <Navigation />
-      <section className="section-padding bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 md:mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      
+      <main className="pt-32 pb-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16 md:mb-20">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
               Meet the <span className="text-[#007AFF]">Team</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               MedLink is organized around three core areas: leadership, mentorship & community, and operations & growth. Each team works together to ensure students receive accessible, high-quality mentorship without barriers.
             </p>
           </div>
 
-          {teamSections.map((section) => (
-            <div key={section.title} className="mb-16">
-              <div className="mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                  {section.title}
-                </h2>
-                <p className="text-gray-600">{section.description}</p>
-              </div>
+          <div className="space-y-24">
+            {teamSections.map((section) => (
+              <div key={section.title} className="relative">
+                <div className="mb-10 text-center md:text-left">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    {section.title}
+                  </h2>
+                  <p className="text-xl text-gray-500 max-w-2xl">{section.description}</p>
+                </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                {section.members.map((member) => (
-                  <Card
-                    key={member.name}
-                    className="border bg-white hover:shadow-lg transition-shadow cursor-pointer"
-                    role="button"
-                    tabIndex={0}
-                    onClick={() => {
-                      setSelected(member);
-                      setOpen(true);
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
+                <div className="flex flex-wrap justify-center gap-8 md:gap-10">
+                  {section.members.map((member) => (
+                    <Card
+                      key={member.name}
+                      className="w-full sm:max-w-[420px] flex-1 min-w-[280px] border-0 bg-white shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer rounded-3xl overflow-hidden hover:-translate-y-1"
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => {
                         setSelected(member);
                         setOpen(true);
-                      }
-                    }}
-                  >
-                    <CardContent className="pt-6 flex flex-col items-center text-center">
-                      <Avatar className="h-24 w-24 mb-4">
-                        {member.image ? (
-                          <AvatarImage
-                            src={member.image}
-                            alt={`${member.name} - ${member.role} headshot`}
-                            className="object-cover"
-                          />
-                        ) : (
-                          <AvatarFallback className="bg-blue-100 text-[#007AFF] text-lg font-semibold">
-                            {member.initials}
-                          </AvatarFallback>
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setSelected(member);
+                          setOpen(true);
+                        }
+                      }}
+                    >
+                      <CardContent className="pt-10 pb-8 px-6 flex flex-col items-center text-center">
+                        <Avatar className="h-32 w-32 mb-6 shadow-md border-4 border-white ring-2 ring-gray-50">
+                          {member.image ? (
+                            <AvatarImage
+                              src={member.image}
+                              alt={`${member.name} - ${member.role} headshot`}
+                              className="object-cover"
+                            />
+                          ) : (
+                            <AvatarFallback className="bg-blue-50 text-[#007AFF] text-2xl font-bold">
+                              {member.initials}
+                            </AvatarFallback>
+                          )}
+                        </Avatar>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                          {member.name}
+                        </h3>
+                        <p className="text-base text-[#007AFF] font-medium tracking-wide">
+                          {member.role}
+                        </p>
+                        {member.activeMentor && (
+                          <span className="mt-4 inline-block text-xs font-bold bg-[#007AFF]/10 text-[#007AFF] px-3 py-1 rounded-full uppercase tracking-wider">
+                            Active Mentor
+                          </span>
                         )}
-                      </Avatar>
-                      <h3 className="text-lg font-semibold text-gray-900">
-                        {member.name}
-                      </h3>
-                      <p className="text-sm text-[#007AFF] font-medium">
-                        {member.role}
-                      </p>
-                      {member.activeMentor && (
-                        <span className="mt-2 inline-block text-xs font-medium bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
-                          Active Mentor
-                        </span>
-                      )}
-                      <p className="mt-3 text-sm text-gray-600 line-clamp-3">
-                        {member.bio}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
+                        <p className="mt-5 text-base text-gray-600 leading-relaxed">
+                          {member.bio}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
           <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="sm:max-w-xl">
+            <DialogContent className="sm:max-w-2xl rounded-3xl p-0 overflow-hidden border-0">
               {selected && (
-                <div className="flex flex-col items-center text-center">
-                  <Avatar className="h-24 w-24 mb-4">
-                    {selected.image ? (
-                      <AvatarImage
-                        src={selected.image}
-                        alt={`${selected.name} - ${selected.role} headshot`}
-                      />
-                    ) : (
-                      <AvatarFallback className="bg-blue-100 text-[#007AFF] text-lg font-semibold">
-                        {selected.initials}
-                      </AvatarFallback>
-                    )}
-                  </Avatar>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {selected.name}
-                  </h3>
-                  <p className="text-sm text-[#007AFF] font-medium">
-                    {selected.role}
-                  </p>
-                  {selected.activeMentor && (
-                    <span className="mt-1 inline-block text-xs font-medium bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
-                      Active Mentor
-                    </span>
-                  )}
-                  <p className="mt-4 text-sm leading-6 text-gray-600 max-w-prose">
-                    {selected.bio}
-                  </p>
-                  <div className="w-full mt-6 text-left bg-gray-50 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                      Responsibilities
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      {selected.responsibilities}
+                <div className="flex flex-col bg-white">
+                  <div className="bg-gray-50 px-8 py-10 flex flex-col items-center text-center border-b border-gray-100 relative">
+                    <Avatar className="h-32 w-32 mb-6 shadow-md border-4 border-white">
+                      {selected.image ? (
+                        <AvatarImage
+                          src={selected.image}
+                          alt={`${selected.name} - ${selected.role} headshot`}
+                          className="object-cover"
+                        />
+                      ) : (
+                        <AvatarFallback className="bg-blue-100 text-[#007AFF] text-2xl font-bold">
+                          {selected.initials}
+                        </AvatarFallback>
+                      )}
+                    </Avatar>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
+                      {selected.name}
+                    </h3>
+                    <p className="text-lg text-[#007AFF] font-medium">
+                      {selected.role}
                     </p>
+                    {selected.activeMentor && (
+                      <span className="mt-4 inline-block text-xs font-bold bg-[#007AFF]/10 text-[#007AFF] px-3 py-1 rounded-full uppercase tracking-wider">
+                        Active Mentor
+                      </span>
+                    )}
+                  </div>
+                  
+                  <div className="p-8 space-y-8">
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">About</h4>
+                      <p className="text-base leading-relaxed text-gray-700">
+                        {selected.bio}
+                      </p>
+                    </div>
+                    
+                    <div className="bg-blue-50/50 rounded-2xl p-6 border border-blue-100/50">
+                      <h4 className="text-sm font-bold text-[#007AFF] uppercase tracking-wider mb-3">
+                        Responsibilities
+                      </h4>
+                      <p className="text-base text-gray-700 leading-relaxed">
+                        {selected.responsibilities}
+                      </p>
+                    </div>
                   </div>
                 </div>
               )}
@@ -250,7 +263,7 @@ const MeetTheTeam = () => {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
         </div>
-      </section>
+      </main>
       <Footer />
     </div>
   );

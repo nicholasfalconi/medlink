@@ -14,63 +14,73 @@ const PreMedGuide = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
       <Navigation />
 
-      <main>
-        <section className="relative bg-background overflow-hidden">
-          <div aria-hidden className="pointer-events-none absolute inset-0">
-            <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary/10 blur-3xl" />
-            <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-secondary/50 blur-3xl" />
+      <main className="bg-gray-50 pb-20 flex-1">
+        {/* Full-width Hero Banner */}
+        <header className="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="/images/premed_guide_hero.jpg"
+              alt="Medical setting with students"
+              className="w-full h-full object-cover origin-center"
+            />
+            <div className="absolute inset-0 bg-gray-900/60 mix-blend-multiply"></div>
           </div>
+          
+          <div className="relative z-10 text-center px-4 max-w-4xl mb-16 md:mb-24">
+            <span className="text-blue-200 font-bold text-sm md:text-base uppercase tracking-widest mb-4 block">
+              Perspective
+            </span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
+              Trying to Do It All: A Real Guide for Undergrads
+            </h1>
+            <p className="mt-4 text-lg text-gray-200 font-medium">
+              Written by Ervis Musa &middot; April 3, 2026
+            </p>
+          </div>
+        </header>
 
-          <div className="section-padding">
-            <div className="max-w-7xl mx-auto px-4 relative">
+        {/* Content Card Overlapping Hero */}
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 relative z-20 -mt-12 md:-mt-16">
+          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 lg:p-16 border border-gray-100">
+            
+            {/* Breadcrumb Context */}
+            <div className="mb-12 border-b border-gray-100 pb-6">
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                    <BreadcrumbLink href="/" className="text-gray-500 hover:text-[#007AFF]">Home</BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator />
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/resources">Blogs</BreadcrumbLink>
+                    <BreadcrumbLink href="/resources" className="text-gray-500 hover:text-[#007AFF]">Blogs</BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator />
                   <BreadcrumbItem>
-                    <BreadcrumbPage>Pre-Med Guide</BreadcrumbPage>
+                    <BreadcrumbPage className="font-semibold text-gray-900">Pre-Med Guide</BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
-
-              <header className="mt-6 text-center animate-fade-in">
-                <h1 className="text-3xl md:text-5xl font-bold text-foreground">Trying to Do It All: A Real Guide for Undergrads Navigating Pre-Med Life</h1>
-                <p className="mt-3 text-sm text-muted-foreground">Written by Ervis Musa &middot; April 3, 2026</p>
-              </header>
             </div>
-          </div>
-        </section>
 
-        <section className="bg-background">
-          <div className="section-padding">
-            <div className="max-w-4xl mx-auto px-4 prose prose-sm md:prose-base text-muted-foreground">
-              <p>
+            <div className="prose prose-lg md:prose-xl max-w-none text-gray-600 leading-relaxed font-serif">
+              <p className="text-2xl text-gray-900 font-medium mb-6 font-sans">
                 If you're an undergraduate thinking about medicine, you've probably felt it already: that pressure to improve everything.
               </p>
               <p>
-                Your GPA. Your extracurriculars. Your research. Your volunteering. Your MCAT. Your sleep, your workouts, your diet... your entire life.
-              </p>
-              <p>
-                And underneath all of that, one quiet question: "Am I doing enough?"
+                Your GPA. Your extracurriculars. Your research. Your volunteering. Your MCAT. Your sleep, your workouts, your diet... your entire life. And underneath all of that, one quiet question: "Am I doing enough?"
               </p>
               <p>
                 This post isn't going to give you a perfect formula - because honestly, there isn't one. Instead, this is about how to manage your time, your expectations, and yourself while you're figuring things out. A huge disclosure - this is just the opinion of one medical student!
               </p>
 
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">What Your Life Might Actually Look Like Right Now</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-6 font-sans">What Your Life Might Actually Look Like Right Now</h2>
               <p>
                 A lot of pre-meds think they just need to "study more." But your reality probably looks more like this:
               </p>
-              <ul className="list-disc pl-5 space-y-1">
+              <ul className="mb-6 list-disc pl-5 space-y-2 bg-gray-50/80 rounded-2xl p-6 text-gray-700 not-prose border border-gray-100">
                 <li>Full course load (often heavy science courses)</li>
                 <li>Extracurriculars (clubs, exec roles, volunteering)</li>
                 <li>Research or trying to get research</li>
@@ -80,174 +90,86 @@ const PreMedGuide = () => {
                 <li>And still trying to have a life</li>
               </ul>
               <p>
-                That's a lot. And research shows that undergraduate students pursuing competitive career paths (like medicine) experience significant academic pressure and stress related to performance expectations.<sup>1</sup>
-              </p>
-              <p>
-                So if it feels like a lot - it is.
+                That's a lot. And research shows that undergraduate students pursuing competitive career paths (like medicine) experience significant academic pressure and stress related to performance expectations.<sup>1</sup> So if it feels like a lot - it is.
               </p>
 
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">The "I Need to Be Perfect" Mindset</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 font-sans">The "I Need to Be Perfect" Mindset</h2>
               <p>
                 One of the biggest traps in pre-med is this: "If I just manage my time perfectly, I can do everything perfectly."
               </p>
               <p>So you try to:</p>
-              <ul className="list-disc pl-5 space-y-1">
+              <ul className="mb-6 list-disc pl-5 space-y-2 bg-blue-50/50 rounded-2xl p-6 text-gray-700 not-prose border border-blue-100/50">
                 <li>Build the perfect study schedule</li>
                 <li>Optimize every hour</li>
                 <li>Wake up early, work out, meal prep, study efficiently, volunteer, research...</li>
                 <li>And never fall behind</li>
               </ul>
               <p>
-                But perfectionism, especially in high-achieving students, is strongly linked to burnout, anxiety, and emotional exhaustion.<sup>2</sup>
-              </p>
-              <p>
-                And here's the honest part: trying to be perfect usually makes things worse, not better.
+                But perfectionism, especially in high-achieving students, is strongly linked to burnout, anxiety, and emotional exhaustion.<sup>2</sup> And here's the honest part: trying to be perfect usually makes things worse, not better.
               </p>
 
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Studying vs. "Doing Enough"</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12 font-sans">Studying vs. "Doing Enough"</h2>
               <p>
-                You might sit down to study and think: "Other people are probably doing more than me."
+                You might sit down to study and think: "Other people are probably doing more than me." So you: study longer than you planned, feel guilty taking breaks, question if your methods are "good enough".
               </p>
-              <p>So you:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Study longer than you planned</li>
-                <li>Feel guilty taking breaks</li>
-                <li>Question if your methods are "good enough"</li>
-              </ul>
-              <p>
-                But effective studying isn't about hours, it's about consistency and strategy.
-              </p>
-              <p>
-                Translation: You don't need the perfect study plan, you need one you can actually stick to.
+              <p className="font-semibold text-gray-900">
+                But effective studying isn't about hours, it's about consistency and strategy. Translation: You don't need the perfect study plan, you need one you can actually stick to.
               </p>
 
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Trying to Build a "Good Application" (While Not Knowing What You Want)</h2>
-              <p>This is one of the hardest parts. You might feel like you need to:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Pick the "right" extracurriculars</li>
-                <li>Get research early</li>
-                <li>Show commitment to a specific path</li>
-                <li>Know what kind of doctor you want to be</li>
-              </ul>
-              <p>But at the same time... You might have:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>No physicians in your life</li>
-                <li>No clear idea what different specialties look like</li>
-                <li>No idea what you actually enjoy yet</li>
-              </ul>
-              <p>
-                That's normal. Career development research shows that exploration, not early certainty, is a key part of forming long-term professional identity.<sup>3</sup>
-              </p>
-              <p>
-                So if you feel like: "I don't know what I'm doing yet" - You're actually doing exactly what you're supposed to be doing.
-              </p>
-
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">Working Out, Eating Well... and Feeling Like You're Failing at Both</h2>
-              <p>Let's be real. You probably want to:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Work out consistently</li>
-                <li>Eat healthy</li>
-                <li>Sleep well</li>
-              </ul>
-              <p>But in reality:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12 font-sans">Working Out, Eating Well... and Feeling Like You're Failing at Both</h2>
+              <p>Let's be real. You probably want to work out consistently, eat healthy, and sleep well. But in reality:</p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>You squeeze in a workout when you can</li>
                 <li>You eat quickly between classes</li>
                 <li>You stay up later than you planned</li>
               </ul>
               <p>
-                And then you think: "I should be better at this."
-              </p>
-              <p>
-                But even moderate physical activity has been shown to improve mood, reduce stress, and support academic performance.<sup>4</sup>
-              </p>
-              <p>
-                Not perfect workouts. Not perfect diets. Just something. A short run. A quick lift. A walk between classes. It counts.
+                And then you think: "I should be better at this." But even moderate physical activity has been shown to improve mood, reduce stress, and support academic performance.<sup>4</sup> Not perfect workouts. Not perfect diets. Just something. A short run. A quick lift. A walk between classes. It counts.
               </p>
 
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">The Hidden Pressure: Comparing Yourself to Everyone</h2>
-              <p>You see:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Someone with a 4.0</li>
-                <li>Someone doing research already</li>
-                <li>Someone volunteering every weekend</li>
-                <li>Someone who "knows" they want surgery or pediatrics</li>
-              </ul>
-              <p>
-                And it feels like: "I'm behind."
-              </p>
-              <p>
-                But what you're seeing is a highlight reel, not the full picture. And constant comparison is associated with increased stress and lower well-being in students.<sup>5</sup>
-              </p>
+              <div className="bg-[#007AFF] text-white rounded-3xl p-10 md:p-12 my-12 not-prose relative overflow-hidden shadow-xl">
+                <div className="relative z-10">
+                  <h2 className="text-3xl font-bold mb-6 font-sans">What Actually Helps</h2>
+                  <ul className="space-y-4 font-serif text-lg text-blue-50">
+                    <li><strong className="text-white font-sans text-xl">1. Focus on what matters right now.</strong> Not everything needs to be optimized at once. Sometimes your priority is exams. Other times: applications. Other times: your health.</li>
+                    <li><strong className="text-white font-sans text-xl">2. Build structure - but keep it flexible.</strong> Rigid schedules often fail. A better approach: Plan your day. Expect it to change. Adjust without guilt.</li>
+                    <li><strong className="text-white font-sans text-xl">3. Let go of "perfect days."</strong> You will have unproductive days, missed workouts, times where you feel off-track. That doesn't mean you're failing.</li>
+                    <li><strong className="text-white font-sans text-xl">4. Let go of comparison.</strong> A highlight reel is not the full picture.</li>
+                  </ul>
+                </div>
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+              </div>
 
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">What Actually Helps (From Both Research and Experience)</h2>
-              <p>Here are a few things that consistently make a difference:</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 font-sans">What I'd Tell You If You Were Sitting Right In Front of Me</h2>
+              <p>You don't need to have your entire path figured out, be perfect, or do everything at once. You do need to stay consistent, keep exploring, be okay with uncertainty, and ask for help.</p>
 
-              <h3 className="text-lg font-semibold text-foreground mt-6 mb-2">1. Focus on what matters right now</h3>
-              <p>
-                Not everything needs to be optimized at once. Sometimes your priority is exams. Other times: applications. Other times: your health. You can't max everything at the same time.
-              </p>
+              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4 font-sans">If You're Feeling Overwhelmed</h2>
+              <p>That feeling of: "I don't know if I'm doing this right" - Almost everyone feels it. So reach out. To a mentor. To a friend. Through MedLink. Because this process is hard enough, you don't have to do it alone.</p>
 
-              <h3 className="text-lg font-semibold text-foreground mt-6 mb-2">2. Build structure - but keep it flexible</h3>
-              <p>
-                Rigid schedules often fail. A better approach: Plan your day. Expect it to change. Adjust without guilt.
-              </p>
-
-              <h3 className="text-lg font-semibold text-foreground mt-6 mb-2">3. Let go of "perfect days"</h3>
-              <p>
-                You will have unproductive days, missed workouts, times where you feel off-track. That doesn't mean you're failing.
-              </p>
-
-              <h3 className="text-lg font-semibold text-foreground mt-6 mb-2">4. Talk to people who are just ahead of you</h3>
-              <p>
-                This is huge. Near-peer mentorship has been shown to improve confidence, reduce stress, and help with decision-making and direction.<sup>6</sup>
-              </p>
-              <p>
-                Because those people remember what it felt like to be where you are. That's what the MedLink Project is built on.
-              </p>
-
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">What I'd Tell You If You Were Sitting Right In Front of Me</h2>
-              <p>You don't need to:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Have your entire path figured out</li>
-                <li>Be perfect</li>
-                <li>Do everything at once</li>
-              </ul>
-              <p>You do need to:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Stay consistent</li>
-                <li>Keep exploring</li>
-                <li>Be okay with uncertainty</li>
-                <li>Ask for help</li>
-              </ul>
-
-              <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">If You're Feeling Overwhelmed</h2>
-              <p>
-                That feeling of: "I don't know if I'm doing this right" - Almost everyone feels it. Seriously.
-              </p>
-              <p>So reach out: To a mentor. To a friend. Through MedLink. Because this process is hard enough, you don't have to do it alone.</p>
-
-              <div className="mt-8 text-center">
+              <div className="mt-10 not-prose text-center sm:text-left">
                 <Link
                   to="/services/mentees"
-                  className="inline-block bg-[#007AFF] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors no-underline"
+                  className="inline-flex bg-gray-900 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#007AFF] transition-all shadow-md hover:shadow-lg no-underline"
                 >
-                  Get Mentored
+                  Get Mentored Today
                 </Link>
               </div>
 
-              <h2 className="text-xl font-bold text-foreground mt-12 mb-4">References</h2>
-              <ol className="list-decimal pl-5 space-y-2 text-xs text-muted-foreground">
-                <li>Beiter R, Nash R, McCrady M, et al. The prevalence and correlates of depression, anxiety, and stress in a sample of college students. <em>J Affect Disord</em>. 2015;173:90-96.</li>
-                <li>Hill AP, Curran T. Multidimensional perfectionism and burnout: A meta-analysis. <em>Pers Soc Psychol Rev</em>. 2016;20(3):269-288.</li>
-                <li>Savickas ML. Career construction theory and practice. In: Brown SD, Lent RW, eds. <em>Career Development and Counseling</em>. 2nd ed. Wiley; 2013.</li>
-                <li>Gosadi IM. Protective Effect of Exercise Against Depression, Anxiety, and Stress Among University Students Based on Their Level of Academic Performance. <em>Medicina (Kaunas)</em>. 2024;60(10):1706.</li>
-                <li>Vogel EA, Rose JP, Roberts LR, Eckles K. Social comparison, social media, and self-esteem. <em>Psychol Pop Media Cult</em>. 2014;3(4):206-222.</li>
-                <li>Sambunjak D, Straus SE, Marusic A. Mentoring in academic medicine: A systematic review. <em>JAMA</em>. 2006;296(9):1103-1115.</li>
-              </ol>
+              <div className="mt-20 pt-8 border-t border-gray-100 text-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 font-sans">References</h3>
+                <ol className="list-decimal pl-5 space-y-2 text-gray-500 font-sans">
+                  <li>Beiter R, Nash R, McCrady M, et al. The prevalence and correlates of depression, anxiety, and stress in a sample of college students. <em>J Affect Disord</em>. 2015;173:90-96.</li>
+                  <li>Hill AP, Curran T. Multidimensional perfectionism and burnout: A meta-analysis. <em>Pers Soc Psychol Rev</em>. 2016;20(3):269-288.</li>
+                  <li>Savickas ML. Career construction theory and practice. In: Brown SD, Lent RW, eds. <em>Career Development and Counseling</em>. 2nd ed. Wiley; 2013.</li>
+                  <li>Gosadi IM. Protective Effect of Exercise Against Depression, Anxiety, and Stress Among University Students Based on Their Level of Academic Performance. <em>Medicina (Kaunas)</em>. 2024;60(10):1706.</li>
+                  <li>Vogel EA, Rose JP, Roberts LR, Eckles K. Social comparison, social media, and self-esteem. <em>Psychol Pop Media Cult</em>. 2014;3(4):206-222.</li>
+                  <li>Sambunjak D, Straus SE, Marusic A. Mentoring in academic medicine: A systematic review. <em>JAMA</em>. 2006;296(9):1103-1115.</li>
+                </ol>
+              </div>
+
             </div>
           </div>
-        </section>
+        </article>
       </main>
 
       <Footer />

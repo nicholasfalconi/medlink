@@ -37,26 +37,39 @@ const services = [
 
 export const Services = () => {
   return (
-    <section id="services" className="section-padding bg-gradient-to-b from-blue-50 to-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="services" className="py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
+          <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-4">
             Our <span className="text-[#007AFF]">Services</span>
           </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Comprehensive support for your medical school journey
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <Card key={index} className="p-8 hover:shadow-lg transition-shadow duration-300 border-0 bg-white">
-              <div className="h-12 w-12 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{service.description}</p>
-            </Card>
-          ))}
+
+        <div className="flex flex-col lg:flex-row gap-12 items-stretch">
+          <div className="lg:w-1/3 w-full">
+            <div className="rounded-3xl overflow-hidden shadow-sm sticky top-24 h-full min-h-[400px]">
+              <img 
+                src="/images/HomePage - Section 2.png"
+                alt="Medical consultation mentorship"
+                className="w-full h-full object-cover absolute inset-0"
+              />
+            </div>
+          </div>
+          
+          <div className="lg:w-2/3 w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+            {services.map((service, index) => (
+              <Card key={index} className="p-8 border-0 bg-[#F9FAFB] hover:shadow-md transition-shadow rounded-2xl">
+                <div className="h-10 w-10 rounded-lg bg-blue-100 flex items-center justify-center mb-5">
+                  <div className="text-[#007AFF] scale-90">{service.icon}</div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
