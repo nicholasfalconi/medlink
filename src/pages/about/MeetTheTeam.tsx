@@ -71,7 +71,7 @@ const teamSections: TeamSection[] = [
         initials: "AL",
       },
       {
-        name: "Alec",
+        name: "Alec Weller",
         role: "Indigenous Mentorship & Outreach Lead",
         bio: "Alec is a medical student at the University of Ottawa. Outside of school, he enjoys playing soccer and staying active through sports. He values mentorship as a way to give students clarity and confidence when navigating a confusing and competitive path, and he's committed to making that journey feel more approachable for others.",
         responsibilities: "Leads Indigenous mentorship initiatives, connecting Indigenous students with mentors who understand their unique experiences and supporting them throughout their journey to medicine.",
