@@ -10,7 +10,7 @@ import {
 
 interface TeamMember {
   name: string;
-  role: string;
+  role?: string;
   bio: string;
   responsibilities?: string;
   image?: string;
@@ -81,8 +81,7 @@ const teamSections: TeamSection[] = [
       },
       {
         name: "Braeden Levac",
-        role: "Porch Dog",
-        bio: "Braeden is a medical student at the University of Ottawa. He completed his Bachelor of Health Sciences at Queen's University, where he developed interests in global and population health, pharmacology, toxicology and therapeutics, disability and physical activity, and applied research, before pursuing graduate studies in professional education. Through his experiences as a teacher, coach, and mentor, he has seen the impact that accessible guidance and encouragement can have on helping others achieve their goals. He is passionate about making the path to medicine more approachable and helping students navigate the challenges and uncertainties along the way. Outside of school, he enjoys staying active through sports and spending time with friends.",
+        bio: "Braeden is a medical student at the University of Ottawa. He completed his Bachelor of Health Sciences at Queen's University, where he developed interests in global and population health, pharmacology, toxicology and therapeutics, disability and physical activity, and applied research, before pursuing graduate studies in professional education. Through his experiences as a teacher, coach, and mentor, he has seen how accessible guidance can help others achieve their goals. He hopes to make the path to medicine more approachable and support students as they navigate its challenges. Outside of school, he enjoys staying active through sports and spending time with friends.",
         image: "/lovable-uploads/braeden-levac.jpg",
         initials: "BL",
         activeMentor: true,
@@ -191,7 +190,7 @@ const MeetTheTeam = () => {
                           {member.image ? (
                             <AvatarImage
                               src={member.image}
-                              alt={`${member.name} - ${member.role} headshot`}
+                              alt={`${member.name}${member.role ? ` - ${member.role}` : ""} headshot`}
                               className="object-cover"
                             />
                           ) : (
@@ -203,9 +202,11 @@ const MeetTheTeam = () => {
                         <h3 className="text-2xl font-bold text-gray-900 mb-1">
                           {member.name}
                         </h3>
-                        <p className="text-base text-[#007AFF] font-medium tracking-wide">
-                          {member.role}
-                        </p>
+                        {member.role && (
+                          <p className="text-base text-[#007AFF] font-medium tracking-wide">
+                            {member.role}
+                          </p>
+                        )}
                         {member.activeMentor && (
                           <span className="mt-4 inline-block text-xs font-bold bg-[#007AFF]/10 text-[#007AFF] px-3 py-1 rounded-full uppercase tracking-wider">
                             Active Mentor
@@ -231,7 +232,7 @@ const MeetTheTeam = () => {
                       {selected.image ? (
                         <AvatarImage
                           src={selected.image}
-                          alt={`${selected.name} - ${selected.role} headshot`}
+                          alt={`${selected.name}${selected.role ? ` - ${selected.role}` : ""} headshot`}
                           className="object-cover"
                         />
                       ) : (
@@ -243,9 +244,11 @@ const MeetTheTeam = () => {
                     <h3 className="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
                       {selected.name}
                     </h3>
-                    <p className="text-lg text-[#007AFF] font-medium">
-                      {selected.role}
-                    </p>
+                    {selected.role && (
+                      <p className="text-lg text-[#007AFF] font-medium">
+                        {selected.role}
+                      </p>
+                    )}
                     {selected.activeMentor && (
                       <span className="mt-4 inline-block text-xs font-bold bg-[#007AFF]/10 text-[#007AFF] px-3 py-1 rounded-full uppercase tracking-wider">
                         Active Mentor
