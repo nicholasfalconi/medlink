@@ -12,7 +12,7 @@ interface TeamMember {
   name: string;
   role: string;
   bio: string;
-  responsibilities: string;
+  responsibilities?: string;
   image?: string;
   initials: string;
   activeMentor?: boolean;
@@ -77,6 +77,14 @@ const teamSections: TeamSection[] = [
         responsibilities: "Leads Indigenous mentorship initiatives, connecting Indigenous students with mentors who understand their unique experiences and supporting them throughout their journey to medicine.",
         image: "/lovable-uploads/ba8e00af-8c59-45e1-b795-26fe6d2cf17c.png",
         initials: "A",
+        activeMentor: true,
+      },
+      {
+        name: "Braeden Levac",
+        role: "Porch Dog",
+        bio: "Braeden is a medical student at the University of Ottawa. He completed his Bachelor of Health Sciences at Queen's University, where he developed interests in global and population health, pharmacology, toxicology and therapeutics, disability and physical activity, and applied research, before pursuing graduate studies in professional education. Through his experiences as a teacher, coach, and mentor, he has seen the impact that accessible guidance and encouragement can have on helping others achieve their goals. He is passionate about making the path to medicine more approachable and helping students navigate the challenges and uncertainties along the way. Outside of school, he enjoys staying active through sports and spending time with friends.",
+        image: "/lovable-uploads/braeden-levac.jpg",
+        initials: "BL",
         activeMentor: true,
       },
     ],
@@ -253,14 +261,16 @@ const MeetTheTeam = () => {
                       </p>
                     </div>
                     
-                    <div className="bg-blue-50/50 rounded-2xl p-6 border border-blue-100/50">
-                      <h4 className="text-sm font-bold text-[#007AFF] uppercase tracking-wider mb-3">
-                        Responsibilities
-                      </h4>
-                      <p className="text-base text-gray-700 leading-relaxed">
-                        {selected.responsibilities}
-                      </p>
-                    </div>
+                    {selected.responsibilities && (
+                      <div className="bg-blue-50/50 rounded-2xl p-6 border border-blue-100/50">
+                        <h4 className="text-sm font-bold text-[#007AFF] uppercase tracking-wider mb-3">
+                          Responsibilities
+                        </h4>
+                        <p className="text-base text-gray-700 leading-relaxed">
+                          {selected.responsibilities}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
