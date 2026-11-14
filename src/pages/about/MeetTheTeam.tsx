@@ -81,8 +81,8 @@ const teamSections: TeamSection[] = [
       },
       {
         name: "Braeden Levac",
-        role: "Mentor",
-        bio: "Braeden is a medical student at the University of Ottawa. He completed his Bachelor of Health Sciences at Queen's University, where he developed interests in global and population health, pharmacology, toxicology and therapeutics, disability and physical activity, and applied research, before pursuing graduate studies in professional education. Through his experiences as a teacher, coach, and mentor, he has seen how accessible guidance can help others achieve their goals. He hopes to make the path to medicine more approachable and support students as they navigate its challenges. Outside of school, he enjoys staying active through sports and spending time with friends.",
+        role: "Education Strategy Lead",
+        bio: "Braeden is a medical student at the University of Ottawa. He completed his Bachelor of Health Sciences at Queen's University, where he developed interests in global and population health, pharmacology, toxicology and therapeutics, disability and physical activity, and applied research, before pursuing graduate studies in professional education. Through his experiences as a secondary school teacher, coach, and mentor, he developed skills in adapting to different learning needs, communicating complex concepts, and supporting student development. Outside of school, he enjoys staying active through sports and spending time with friends.",
         image: "/lovable-uploads/braeden-levac.jpg",
         initials: "BL",
         activeMentor: true,
